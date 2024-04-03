@@ -22,10 +22,9 @@ struct SpotifyRecentCell: View {
                 .lineLimit(2)
             
         }
-        .foregroundStyle(.red)
         .padding(.trailing, 8)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.blue)
+        .themeColors(isSelected: false)
         .cornerRadius(6)
     }
 }
@@ -56,5 +55,14 @@ struct SpotifyRecentCell: View {
                 SpotifyRecentCell()
             }
         }
+    }
+}
+
+
+extension View {
+    func themeColors(isSelected: Bool) -> some View {
+        self
+            .background(isSelected ? .spotifyGreen : .spotifyDarkGray)
+            .foregroundStyle(isSelected ? .spotifyBlack : .spotifyWhite)
     }
 }

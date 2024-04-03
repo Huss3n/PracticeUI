@@ -135,6 +135,7 @@
 		D784BE562BBD52EA001B5246 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
+				D784BE622BBD94B4001B5246 /* Extentions */,
 				D784BE5D2BBD608B001B5246 /* Model */,
 				D784BE582BBD52F5001B5246 /* Components */,
 				D784BE572BBD52EF001B5246 /* Core */,
@@ -165,6 +166,13 @@
 				D784BE5E2BBD6097001B5246 /* Category.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D784BE622BBD94B4001B5246 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
