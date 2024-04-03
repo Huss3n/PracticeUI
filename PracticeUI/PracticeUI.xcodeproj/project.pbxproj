@@ -23,6 +23,7 @@
 		D784BE5A2BBD5308001B5246 /* SpotifyHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE592BBD5308001B5246 /* SpotifyHome.swift */; };
 		D784BE5C2BBD5E21001B5246 /* SpotifyCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE5B2BBD5E21001B5246 /* SpotifyCategoryCell.swift */; };
 		D784BE5F2BBD6098001B5246 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE5E2BBD6097001B5246 /* Category.swift */; };
+		D784BE612BBD92C0001B5246 /* SpotifyRecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D784BE592BBD5308001B5246 /* SpotifyHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHome.swift; sourceTree = "<group>"; };
 		D784BE5B2BBD5E21001B5246 /* SpotifyCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCategoryCell.swift; sourceTree = "<group>"; };
 		D784BE5E2BBD6097001B5246 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D784BE5B2BBD5E21001B5246 /* SpotifyCategoryCell.swift */,
+				D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D784BE312BBC2B0B001B5246 /* ContentView.swift in Sources */,
+				D784BE612BBD92C0001B5246 /* SpotifyRecentCell.swift in Sources */,
 				D784BE5A2BBD5308001B5246 /* SpotifyHome.swift in Sources */,
 				D784BE462BBC3560001B5246 /* DatabaseHelper.swift in Sources */,
 				D784BE2F2BBC2B0B001B5246 /* PracticeUIApp.swift in Sources */,
