@@ -16,34 +16,7 @@ struct SpotifyHome: View {
             Color.spotifyBlack
                 .ignoresSafeArea()
             
-            HStack {
-                ZStack {
-                    if let currentUser {
-                        ImageLoader(url: currentUser.image)
-                            .background(.spotifyWhite)
-                            .clipShape(Circle())
-                            .onTapGesture {
-                                
-                            }
-                    }
-                }
-                .frame(width: 30, height: 30)
-                
-                ScrollView(.horizontal) {
-                    HStack(spacing: 8) {
-                        ForEach(Category.allCases, id: \.self) { category in
-                            SpotifyCategoryCell(
-                                title: category.rawValue.capitalized,
-                                isSelected: category == selectedCategory
-                            )
-                            .onTapGesture {
-                                selectedCategory = category
-                            }
-                        }
-                    }
-                }
-                .scrollIndicators(.hidden)
-            }
+            header
         }
         .task {
             await getUsers()
@@ -57,6 +30,38 @@ struct SpotifyHome: View {
         } catch  {
             print("Error getting users \(error.localizedDescription)")
         }
+    }
+    
+    private var header: some View {
+      HStack(spacing: 16) {
+                    ZStack {
+                        if let currentUser {
+                            ImageLoader(url: currentUser.image)
+                                .background(.spotifyWhite)
+                                .clipShape(Circle())
+                                .onTapGesture {
+                                    
+                                }
+                        }
+                    }
+                    .frame(width: 35, height: 35)
+                    
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 8) {
+                            ForEach(Category.allCases, id: \.self) { category in
+                                SpotifyCategoryCell(
+                                    title: category.rawValue.capitalized,
+                                    isSelected: category == selectedCategory
+                                )
+                                .onTapGesture {
+                                    selectedCategory = category
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 16)
+                    }
+                    .scrollIndicators(.hidden)
+                }
     }
 }
 
