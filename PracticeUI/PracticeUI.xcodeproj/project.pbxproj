@@ -25,6 +25,7 @@
 		D784BE5F2BBD6098001B5246 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE5E2BBD6097001B5246 /* Category.swift */; };
 		D784BE612BBD92C0001B5246 /* SpotifyRecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */; };
 		D784BE672BC14D3B001B5246 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE662BC14D3B001B5246 /* MainView.swift */; };
+		D784BE692BC18F5B001B5246 /* SpotifyNewReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE682BC18F5B001B5246 /* SpotifyNewReleaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D784BE5E2BBD6097001B5246 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentCell.swift; sourceTree = "<group>"; };
 		D784BE662BC14D3B001B5246 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D784BE682BC18F5B001B5246 /* SpotifyNewReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNewReleaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				D784BE5B2BBD5E21001B5246 /* SpotifyCategoryCell.swift */,
 				D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */,
+				D784BE682BC18F5B001B5246 /* SpotifyNewReleaseCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				D784BE5C2BBD5E21001B5246 /* SpotifyCategoryCell.swift in Sources */,
 				D784BE432BBC2DAA001B5246 /* Constants.swift in Sources */,
 				D784BE492BBC357B001B5246 /* Product.swift in Sources */,
+				D784BE692BC18F5B001B5246 /* SpotifyNewReleaseCell.swift in Sources */,
 				D784BE4B2BBC3A83001B5246 /* User.swift in Sources */,
 				D784BE5F2BBD6098001B5246 /* Category.swift in Sources */,
 			);
