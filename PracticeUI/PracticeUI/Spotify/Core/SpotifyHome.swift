@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import SwiftfulUI
+
 
 struct SpotifyHome: View {
     @State private var currentUser: User? = nil
     @State private var selectedCategory: Category? = nil
+    
+    @State private var products: [Product] = []
     
     var body: some View {
         ZStack {
@@ -20,11 +24,21 @@ struct SpotifyHome: View {
                 
                 LazyVStack(spacing: 2, pinnedViews: [.sectionHeaders], content: {
                     Section {
-                        ForEach(0..<10){ _ in
-                            Rectangle()
-                                .fill(.red)
-                                .frame(width: 300, height: 100)
+                        
+                        VStack {
+                            NonLazyVGrid(
+                                columns: 2,
+                                alignment: .center,
+                                spacing: 10,
+                                items: products) { product in
+                                    if let product {
+                                        SpotifyRecentCell(
+                                            imageName: product.firstImage,
+                                            title: product.title)
+                                    }
+                                }
                         }
+                        
                     } header: {
                         header
                     }
@@ -39,6 +53,7 @@ struct SpotifyHome: View {
         }
         .task {
             await getUsers()
+            await getProducts()
         }
         .toolbar(.hidden, for: .navigationBar)
         
@@ -49,6 +64,14 @@ struct SpotifyHome: View {
             currentUser = try await DatabaseHelper().getUsers().first
         } catch  {
             print("Error getting users \(error.localizedDescription)")
+        }
+    }
+    
+    private func getProducts() async {
+        do {
+            products = try await Array(DatabaseHelper().getProducts().prefix(8))
+        } catch  {
+            print("Error getting products \(error.localizedDescription)")
         }
     }
     
@@ -85,7 +108,7 @@ struct SpotifyHome: View {
         }
         .padding(.vertical, 24)
         .background(.spotifyBlack)
-        .padding(.leading, 8)
+//        .padding(.leading, 8)
     }
 }
 
