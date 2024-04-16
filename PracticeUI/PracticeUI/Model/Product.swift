@@ -52,7 +52,7 @@ struct Product: Codable, Identifiable {
         Product(
             id: 124,
             title: "Apple",
-            description: "This is a mock product",
+            description: "This is a mock product descption text and it goes here",
             price: 100,
             discountPercentage: 20,
             rating: 4.5,

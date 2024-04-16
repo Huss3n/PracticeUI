@@ -30,6 +30,7 @@
 		D784BE872BCEA591001B5246 /* SpotifyPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE862BCEA591001B5246 /* SpotifyPlaylistView.swift */; };
 		D784BE892BCEA5C9001B5246 /* PlaylistHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE882BCEA5C9001B5246 /* PlaylistHeaderCell.swift */; };
 		D784BE8B2BCEAFD3001B5246 /* PlaylistDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE8A2BCEAFD3001B5246 /* PlaylistDescriptionCell.swift */; };
+		D784BE8D2BCEC1A5001B5246 /* SongRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE8C2BCEC1A5001B5246 /* SongRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		D784BE862BCEA591001B5246 /* SpotifyPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaylistView.swift; sourceTree = "<group>"; };
 		D784BE882BCEA5C9001B5246 /* PlaylistHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCell.swift; sourceTree = "<group>"; };
 		D784BE8A2BCEAFD3001B5246 /* PlaylistDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDescriptionCell.swift; sourceTree = "<group>"; };
+		D784BE8C2BCEC1A5001B5246 /* SongRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongRowCell.swift; path = PracticeUI/Spotify/Components/SongRowCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				D784BE592BBD5308001B5246 /* SpotifyHome.swift */,
 				D784BE862BCEA591001B5246 /* SpotifyPlaylistView.swift */,
+				D784BE8C2BCEC1A5001B5246 /* SongRowCell.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				D784BE5A2BBD5308001B5246 /* SpotifyHome.swift in Sources */,
 				D784BE462BBC3560001B5246 /* DatabaseHelper.swift in Sources */,
 				D784BE2F2BBC2B0B001B5246 /* PracticeUIApp.swift in Sources */,
+				D784BE8D2BCEC1A5001B5246 /* SongRowCell.swift in Sources */,
 				D784BE412BBC2DA1001B5246 /* ImageLoader.swift in Sources */,
 				D784BE4D2BBC3B29001B5246 /* Quote.swift in Sources */,
 				D784BE5C2BBD5E21001B5246 /* SpotifyCategoryCell.swift in Sources */,

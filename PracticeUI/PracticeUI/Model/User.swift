@@ -24,4 +24,22 @@ struct User: Codable, Identifiable {
     let bloodGroup: String
     let height: Int
     let weight: Double
+    
+    static var mock: User {
+        User (
+            id: 123,
+            firstName: "Hussein",
+            lastName: "Aisak",
+            age: 23,
+            email: "abc@test.com",
+            phone: "12345678",
+            username: "@hussein",
+            password: "abcde123",
+            birthDate: "2000",
+            image: Constants.url,
+            bloodGroup: "AB",
+            height: 140,
+            weight: 64
+            )
+    }
 }
