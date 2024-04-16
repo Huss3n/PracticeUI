@@ -27,6 +27,11 @@ struct SpotifyHome: View {
                         
                         VStack {
                             recentSection
+                            
+                            if let product = products.first {
+                                newReleaseSection(product: product)
+                            }
+                        
                         }
                         .padding(.horizontal, 16)
                         
@@ -114,6 +119,17 @@ struct SpotifyHome: View {
                         title: product.title)
                 }
             }
+    }
+    
+    private func newReleaseSection(product: Product) -> some View {
+            SpotifyNewReleaseCell(
+                imageName: product.firstImage,
+                headline: product.brand,
+                subheadline: product.category,
+                title: product.title,
+                subtitle: product.description) {
+                    //
+                }
     }
 }
 

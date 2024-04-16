@@ -26,6 +26,7 @@
 		D784BE612BBD92C0001B5246 /* SpotifyRecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */; };
 		D784BE672BC14D3B001B5246 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE662BC14D3B001B5246 /* MainView.swift */; };
 		D784BE692BC18F5B001B5246 /* SpotifyNewReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE682BC18F5B001B5246 /* SpotifyNewReleaseCell.swift */; };
+		D784BE852BCE892C001B5246 /* ImageTitleRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784BE842BCE892C001B5246 /* ImageTitleRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentCell.swift; sourceTree = "<group>"; };
 		D784BE662BC14D3B001B5246 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D784BE682BC18F5B001B5246 /* SpotifyNewReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNewReleaseCell.swift; sourceTree = "<group>"; };
+		D784BE842BCE892C001B5246 /* ImageTitleRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleRowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				D784BE5B2BBD5E21001B5246 /* SpotifyCategoryCell.swift */,
 				D784BE602BBD92C0001B5246 /* SpotifyRecentCell.swift */,
 				D784BE682BC18F5B001B5246 /* SpotifyNewReleaseCell.swift */,
+				D784BE842BCE892C001B5246 /* ImageTitleRowCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				D784BE5C2BBD5E21001B5246 /* SpotifyCategoryCell.swift in Sources */,
 				D784BE432BBC2DAA001B5246 /* Constants.swift in Sources */,
 				D784BE492BBC357B001B5246 /* Product.swift in Sources */,
+				D784BE852BCE892C001B5246 /* ImageTitleRowCell.swift in Sources */,
 				D784BE692BC18F5B001B5246 /* SpotifyNewReleaseCell.swift in Sources */,
 				D784BE4B2BBC3A83001B5246 /* User.swift in Sources */,
 				D784BE5F2BBD6098001B5246 /* Category.swift in Sources */,
