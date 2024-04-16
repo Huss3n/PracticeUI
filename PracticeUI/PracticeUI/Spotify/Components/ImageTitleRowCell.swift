@@ -8,18 +8,32 @@
 import SwiftUI
 
 struct ImageTitleRowCell: View {
-    let url = Constants.url
+    var imageName: String = Constants.url
+    var imageSize: CGFloat = 100
+    var title: String? = "iPhone X"
+    
     var body: some View {
-        VStack(alignment: .center) {
-            ImageLoader(url: url)
-                .frame(width: 140, height: 140)
+        VStack(alignment: .leading, spacing: 8) {
+            ImageLoader(url: imageName)
+                .frame(width: imageSize, height: imageSize)
             
-            Text("iPhone x")
-                .foregroundStyle(.spotifyLightGray)
+            if let title {
+                Text(title)
+                    .font(.callout)
+                    .lineLimit(2)
+                    .foregroundStyle(.spotifyLightGray)
+            }
         }
+        .frame(width: imageSize)
     }
 }
 
 #Preview {
-    ImageTitleRowCell()
+    ZStack {
+        Color.spotifyBlack
+            .ignoresSafeArea()
+        
+        ImageTitleRowCell()
+        
+    }
 }

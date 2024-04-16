@@ -47,5 +47,11 @@ struct Product: Codable, Identifiable {
     var firstImage: String {
         images.first ?? Constants.url
     }
-    
+}
+
+
+struct ProductRow: Identifiable {
+    let id = UUID().uuidString
+    let title: String
+    let product: [Product]
 }
