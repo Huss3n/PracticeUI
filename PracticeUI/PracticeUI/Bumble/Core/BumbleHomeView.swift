@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct BumbleHomeView: View {
+    var filters: [String] = ["Everyone", "Trending"]
+    @State private var selectedFilter: String = "Everyone"
+    
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 12) {
             bumbleHeader
+            BumbleFilterView(options: filters, selection: $selectedFilter)
+                .background( Divider() , alignment: .bottom)
+            
             Spacer()
             
             
