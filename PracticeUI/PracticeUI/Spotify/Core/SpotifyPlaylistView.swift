@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
 
 struct SpotifyPlaylistView: View {
+    @Environment(\.router) var router
+    
     var product: Product = .mock
     var user: User = .mock
     @State private var products: [Product] = []
@@ -78,7 +81,7 @@ struct SpotifyPlaylistView: View {
                     .background(showHeader ? Color.black.opacity(0.001) : .spotifyGray.opacity(0.7))
                     .clipShape(Circle())
                     .onTapGesture {
-                        
+                        router.dismissScreen()
                     }
                     .padding(.leading, 16)
                     .frame(maxWidth: .infinity, alignment: .leading)
